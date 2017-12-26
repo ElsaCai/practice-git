@@ -1,0 +1,13 @@
+{
+  "EXAMPLE_HELLO_WORLD": "Hello world",
+  "EXAMPLE_SITE_CONFIGURE": "Configure me!",
+  "CONFIG_FIST_NAME": "First Name",
+  "CONFIG_LAST_NAME": "LAST Name",
+  "CONFIG_FAVOR_COLOR": "Favorite Color",
+  "CONFIG_FAVOR_CITY": "Favorite City",
+  "CONFIG_VERIFIED": "Verified",
+  "CONFIG_RESPONSE": "RESPONSE",
+  "CONFIG_APPLY": "APPLY CHANGES",
+  "CONFIG_RESET": "RESET",
+  "CONFIG_CANCEL": "CANCEL"
+}

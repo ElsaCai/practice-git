@@ -1,0 +1,39 @@
+/**
+ * These styles bridge the gap between the UBNT themes and the lato-font-face package.
+ */
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/Lato-Hairline.eot);
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(../fonts/Lato-Hairline.woff2) format('woff'), url(../fonts/Lato-Hairline.woff) format('woff'), url(../fonts/Lato-Hairline.ttf) format('truetype'), url(../fonts/Lato-Hairline.svg#Lato) format('svg');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Lato-Light.eot);
+  src: local('Lato Light'), local('Lato-Light'), url(../fonts/Lato-Light.woff2) format('woff'), url(../fonts/Lato-Light.woff) format('woff'), url(../fonts/Lato-Light.ttf) format('truetype'), url(../fonts/Lato-Light.svg#Lato) format('svg');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Lato-Regular.eot);
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/Lato-Regular.woff2) format('woff'), url(../fonts/Lato-Regular.woff) format('woff'), url(../fonts/Lato-Regular.ttf) format('truetype'), url(../fonts/Lato-Regular.svg#Lato) format('svg');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Lato-Bold.eot);
+  src: local('Lato Bold'), local('Lato-Bold'), url(../fonts/Lato-Bold.woff2) format('woff'), url(../fonts/Lato-Bold.woff) format('woff'), url(../fonts/Lato-Bold.ttf) format('truetype'), url(../fonts/Lato-Bold.svg#Lato) format('svg');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/Lato-Black.eot);
+  src: local('Lato Black'), local('Lato-Black'), url(../fonts/Lato-Black.woff2) format('woff'), url(../fonts/Lato-Black.woff) format('woff'), url(../fonts/Lato-Black.ttf) format('truetype'), url(../fonts/Lato-Black.svg#Lato) format('svg');
+}

@@ -1,0 +1,61 @@
+div(data-role='fieldcontain' class='config') CONFIGURATION
+   hr
+   form(name="myform")
+     div(data-role='fieldcontain')
+         label(for='first_name') {{'CONFIG_FIST_NAME' | translate}}
+         input(id='fname', name='fname', type='text', ng-model="FirstName", required)
+         p(ng-show="showMsgs && myform.fname.$error.required") This field is required
+
+     div(data-role='fieldcontain')
+         label(for='last_name') {{'CONFIG_LAST_NAME' | translate}}
+         input(id='lname', name='lname', type='text', ng-model="LastName", required)
+         p(ng-show="showMsgs && myform.lname.$error.required") This field is required
+
+     div(data-role='fieldcontain')
+         label(for='favorite_color') {{'CONFIG_FAVOR_COLOR' | translate}}
+         span(ng-repeat="color in colors")
+          input(type='checkbox', ng-model="colorsObj[color.name]", value='{{color.name}}')
+          {{color.name}}
+
+     div(data-role='fieldcontain')
+        label(style='float:left;height:40px;') {{'CONFIG_FAVOR_CITY' | translate}}
+        span(ng-repeat="city in citys" class='block')
+          input(type='radio', name='city', ng-model="citysObj[city.name]", value='{{city.name}}')
+          {{city.name}}
+
+     div(data-role='fieldcontain')
+       label(for='verified') {{'CONFIG_VERIFIED' | translate}}
+       label(class='switch')
+          input(type='checkbox', ng-model="formElem.checkbox" ng-change="toggleChange(formElem.checkbox)" ng-checked="formElem.checkbox == 1")
+          div(class='slider round')
+            span(class='on') On
+            span(class='off') Off
+     hr
+
+     div(data-role='fieldcontain')
+       input(type="button", class="btn btn-apply btn-lg", value="{{'CONFIG_APPLY' | translate}}" ng-click="getAllSelected()")
+       input(type="button", class="btn btn-reset btn-lg", value="RESET" ng-click="reset()")
+       input(type="button", class="btn btn-cancel btn-lg", value="CANCEL" ng-click="reset()")
+
+div(class='response' data-role='fieldcontain') {{'CONFIG_RESPONSE' | translate}}
+    hr
+    div(data-role='fieldcontain')
+         label(for='r_first_name') {{'CONFIG_FIST_NAME' | translate}}
+         span(id='f_name_txt') {{ fname }}
+
+    div(data-role='fieldcontain')
+         label(for='r_first_name') {{'CONFIG_LAST_NAME' | translate}}
+         span(id='l_name_txt') {{ lname}}
+
+    div(data-role='fieldcontain')
+         label(for='r_favorite_color') {{'CONFIG_FAVOR_COLOR' | translate}}
+         span(id='favorite_color_txt') {{ r_colorNameArray }}
+
+    div(data-role='fieldcontain')
+         label(for='r_favorite_city'){{'CONFIG_FAVOR_CITY' | translate}}
+         span(id='favorite_city_txt') {{ r_cityNameArray }}
+
+    div(data-role='fieldcontain')
+         label(for='r_verified') {{'CONFIG_VERIFIED' | translate}}
+         span(id='verified_txt') {{r_switch}}
+

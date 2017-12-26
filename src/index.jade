@@ -1,0 +1,47 @@
+doctype html
+html(
+  lang="en"
+  ng-app="example"
+  ng-controller="ConfigurationController"
+  ng-strict-di
+)
+  head
+    meta(charset="utf-8")
+    title Dev Test
+    link(rel="stylesheet", href="css/app.css")
+
+    link(href="styles/icons/css/style.css", rel="stylesheet")
+    link(href="styles/lato/css/lato.css", rel="stylesheet")
+    link(href="styles/lato/css/ubnt-lato.css", rel="stylesheet")
+    link(href="styles/ubnt/css/ubnt.css", rel="stylesheet")
+
+    meta(
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    )
+
+    base(href="/")
+
+    if development
+      script(src="js/components.js")
+      script(src="js/main.js")
+    else
+      script(src="js/app.js")
+
+  body(
+    ng-cloak
+  )
+    .appGlobalHeader
+      .appGlobalHeader__content.appGlobalHeader__content--left
+        a.appGlobalHeader__ubntLogo(
+          aria-hidden="true"
+          href="//ubnt.com"
+          target="_blank"
+        )
+          .appGlobalHeader__ubntLogoInner
+            .icon.ubnt-icon--ubnt-logo-u
+
+    .appGlobalSideNav
+
+    .appView
+      ui-view
